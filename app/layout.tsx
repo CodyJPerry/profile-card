@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={notoSans.className}>{children}</body>
+      <body
+        className={`${notoSans.className} h-screen w-screen bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
