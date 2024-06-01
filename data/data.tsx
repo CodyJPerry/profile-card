@@ -6,7 +6,7 @@ import {
 } from 'react-icons/ri';
 
 interface Socials {
-  id: string;
+  id: number;
   name: string;
   link: string;
   icon: JSX.Element;
