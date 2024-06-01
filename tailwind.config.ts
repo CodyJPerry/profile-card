@@ -14,10 +14,15 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       width: {
+        5: '1.25rem',
         'profile-card': '21.25rem',
       },
       height: {
+        5: '1.25rem',
         'profile-card': '26.75rem',
+      },
+      screens: {
+        xs: '375px',
       },
     },
   },

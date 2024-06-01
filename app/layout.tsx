@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${notoSans.className} h-screen w-screen bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]`}
+        className={`${notoSans.className} min-h-screen w-screen bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB] sm:my-8 overflow-hidden`}
       >
         {children}
       </body>

@@ -1,20 +1,10 @@
 import Image from 'next/image';
 import { socials } from '@/data/data';
 import Link from 'next/link';
-import { Ri24HoursFill } from 'react-icons/ri';
-
-// const socials = [
-//   {
-//     id: 1,
-//     name: 'Twitter',
-//     link: 'https://twitter.com/sarahdole',
-//     icon: <Ri24HoursFill />,
-//   },
-// ];
 
 export default function Home() {
   return (
-    <main className='mt-[200px] flex justify-center'>
+    <main className='mt-[200px] flex justify-center mx-6'>
       <section className='bg-white w-profile-card h-profile-card shadow border-2 border-neutral-200 rounded-lg py-6 px-4 flex flex-col items-center text-center'>
         <figure className='relative'>
           <Image
@@ -44,7 +34,12 @@ export default function Home() {
         {/* Social Links list */}
         <div className='flex space-x-7'>
           {socials.map(({ id, name, link, icon }) => (
-            <Link key={id} href={link}>
+            <Link
+              key={id}
+              href={link}
+              className='text-indigo-700'
+              aria-label={`Visit my ${name} profile at ${link}`}
+            >
               {icon}
             </Link>
           ))}
