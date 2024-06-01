@@ -28,7 +28,7 @@ export default function Home() {
           Stack Overflow and ChatGPT developer.
         </p>
         {/* Call to Action Button */}
-        <button className='block text-base font-medium text-white bg-indigo-700 w-full rounded px-4 py-[10px] mb-8'>
+        <button className='block text-base font-medium text-white bg-indigo-700 w-full rounded px-4 py-[10px] mb-8 hover:bg-[#3730A3] focus:outline-none focus:ring-4 focus:ring-indigo-100 disabled:cursor-not-allowed disabled:bg-[#F5F5F5] disabled:text-[#A3A3A3]'>
           Contact me
         </button>
         {/* Social Links list */}
@@ -37,7 +37,7 @@ export default function Home() {
             <Link
               key={id}
               href={link}
-              className='text-indigo-700 h-5 w-5'
+              className='text-indigo-700 h-5 w-5 focus:outline-none focus:ring-4 focus:ring-offset-8 focus:ring-indigo-100 focus:rounded-sm'
               aria-label={`Visit my ${name} profile at ${link}`}
             >
               {icon}

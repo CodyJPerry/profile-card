@@ -5,7 +5,14 @@ import {
   RiTwitterXFill,
 } from 'react-icons/ri';
 
-export const socials = [
+interface Socials {
+  id: string;
+  name: string;
+  link: string;
+  icon: JSX.Element;
+}
+
+export const socials: Socials[] = [
   {
     id: 1,
     name: 'Github',
