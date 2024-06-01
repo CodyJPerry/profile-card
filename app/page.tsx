@@ -37,7 +37,7 @@ export default function Home() {
             <Link
               key={id}
               href={link}
-              className='text-indigo-700'
+              className='text-indigo-700 h-5 w-5'
               aria-label={`Visit my ${name} profile at ${link}`}
             >
               {icon}
