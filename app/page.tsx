@@ -39,6 +39,7 @@ export default function Home() {
               href={link}
               className='text-indigo-700 h-8 w-8 focus:outline-none focus:ring-4 focus:ring-offset-7 focus:ring-indigo-100 focus:rounded-sm hover:bg-[#FAFAFA] hover:rounded-sm flex items-center justify-center'
               aria-label={`Visit my ${name} profile at ${link}`}
+              prefetch={true}
             >
               {icon}
             </Link>
