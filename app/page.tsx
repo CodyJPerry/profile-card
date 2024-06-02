@@ -32,7 +32,7 @@ export default function Home() {
           Contact me
         </button>
         {/* Social Links list */}
-        <div className='flex space-x-7'>
+        <div className='flex space-x-6'>
           {socials.map(({ id, name, link, icon }) => (
             <Link
               key={id}
